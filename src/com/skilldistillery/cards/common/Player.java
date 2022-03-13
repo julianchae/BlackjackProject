@@ -17,14 +17,26 @@ public class Player {
 	}
 	
 	public String showCard() {
-		return blackJackHand.toString();
+		
+		
+		return blackJackHand.showCard1();
+		
 		
 	}
+	public String showCard2() {
+		return blackJackHand.showCard2();
+	}
+	
+	
 	public int getHandValue() {
 		return blackJackHand.getHandValue();
+		
+		
+	}
+	public String getInfo() {
+		return blackJackHand.toString();
 	}
 	
 		
 	}
 	
-

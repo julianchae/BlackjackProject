@@ -26,15 +26,20 @@ public class BlackJackApp {
 
 		dealer.shuffleDeck();
 
+		//deals cards to dealer and player
 		dealer.recieveCard(dealer.dealCard());
 		dealer.recieveCard(dealer.dealCard());
 		player.recieveCard(dealer.dealCard());
 		player.recieveCard(dealer.dealCard());
 	
 		
-		System.out.println(player.showCard());
+		System.out.println("Player's first card: "+ player.showCard());
 		
+		System.out.println("Dealer's first card " +dealer.showCard());
 		
+		System.out.println("Player's second card: "+player.showCard2());
+		
+		System.out.println("Player's info: "+ player.getInfo());
 
 	
 		
@@ -47,10 +52,13 @@ public class BlackJackApp {
 			if (userInput == 1) {
 
 				player.recieveCard(dealer.dealCard());
-				System.out.println(player.showCard());
+				System.out.println(player.getInfo());
 			}
 			if (userInput == 2) {
-				System.out.println(player.showCard());
+				System.out.println(player.getInfo());
+				
+				System.out.println("Dealer's second card: "+ dealer.showCard2());
+				System.out.println("Dealer's Card's and values : " +dealer.getInfo());
 				break;
 			}
 
@@ -61,7 +69,9 @@ public class BlackJackApp {
 			if (player.getHandValue() > 21) {
 				blackJackHand.isBust();
 			}
+			
 
 		}
+	
 	}
 }

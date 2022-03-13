@@ -27,10 +27,24 @@ public abstract class Hand {
 
 	public abstract int getHandValue();
 
-	@Override
+	public String showCard1() {
+		
+		return "Card: "+ cards.get(0);
+		
+	}
+	public String showCard2() {
+		
+		return "Card: " + cards.get(1);
+	}
 	public String toString() {
 		
-		return "Your hand contains" + cards+ "Your hand value is :"+getHandValue();
+		return "Cards: "+ cards+ "Value : " +getHandValue();
 	}
 
 }
+
+
+
+
+
+
