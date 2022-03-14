@@ -4,7 +4,7 @@ import com.skilldistillery.cards.blackjack.BlackJackHand;
 
 public class Dealer extends Player{
 
-	private BlackJackHand blackJackHand = new BlackJackHand();
+	public BlackJackHand blackJackHand = new BlackJackHand();
 	
 	
 	private Deck deck = new Deck();

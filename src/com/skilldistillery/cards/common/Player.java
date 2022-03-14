@@ -6,7 +6,7 @@ import com.skilldistillery.cards.blackjack.BlackJackHand;
 
 public class Player {
 
-	private BlackJackHand blackJackHand = new BlackJackHand();
+	public BlackJackHand blackJackHand = new BlackJackHand();
 	
 	protected List<Card> cards;
 	

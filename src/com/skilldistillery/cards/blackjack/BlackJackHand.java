@@ -11,16 +11,18 @@ public class BlackJackHand extends Hand {
 	}
 
 	public boolean isBlackJack() {
-
-		System.out.println("BlackJack!!!");
-		return true;
+		if (getHandValue() == 21) {
+			return true;
+		}
+		return false;
 
 	}
 
 	public boolean isBust() {
-
-		System.out.println("You busted. HAHA");
-		return true;
+		if (getHandValue() > 21) {
+			return true;
+		}
+		return false;
 
 	}
 
@@ -36,9 +38,3 @@ public class BlackJackHand extends Hand {
 	}
 
 }
-
-
-
-
-
-

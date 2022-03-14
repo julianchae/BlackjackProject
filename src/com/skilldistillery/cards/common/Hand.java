@@ -13,8 +13,6 @@ public abstract class Hand {
 	}
 	
 
-		
-	
 
 	public void addCard(Card card) { // taking in a card
 		this.cards.add(card); // adding to list cards
@@ -22,6 +20,7 @@ public abstract class Hand {
 	}
 
 	public void clear() {
+		cards = new ArrayList<Card>();
 
 	}
 
@@ -40,7 +39,7 @@ public abstract class Hand {
 		
 		return "Cards: "+ cards+ "Value : " +getHandValue();
 	}
-
+	
 }
 
 
